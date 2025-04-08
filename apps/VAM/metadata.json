@@ -1,0 +1,40 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "6355a7e6-14d0-11f0-bf18-ef7a957f8334",
+  "appTemplate": {
+    "appThemeId": 149695,
+    "pageCodeFolders": {
+      "object": {
+        "home": {
+          "array": []
+        },
+        "rokuConfig": {
+          "array": []
+        },
+        "amazonConfig": {
+          "array": []
+        },
+        "adLines": {
+          "array": ["dbQueries", "js", "variables"]
+        },
+        "globalParamas": {
+          "array": ["js", "varaiables", "gbQueries", "archived"]
+        },
+        "vamHome": {
+          "array": []
+        },
+        "abTesting": {
+          "array": []
+        },
+        "globalParams": {
+          "array": ["gbQueries", "js", "varaiables"]
+        }
+      }
+    },
+    "rootScreen": "home",
+    "appThemeName": "nbc",
+    "version": "3.184.0",
+    "experimentalDataTabEnabled": true
+  }
+}
