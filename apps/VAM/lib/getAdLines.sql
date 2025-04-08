@@ -1,0 +1,1 @@
+SELECT * FROM ad_lines_config
