@@ -14,9 +14,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Ignore .github/workflows folder changes
+      - name: Skip .github/workflows Files
         run: |
-          git update-index --skip-worktree .github/workflows
+          git ls-files -z .github/workflows/ | xargs -0 git update-index --skip-worktree
 
       - name: Start SSH Agent and Add Key
         uses: webfactory/ssh-agent@v0.5.4
