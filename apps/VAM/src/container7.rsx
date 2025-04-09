@@ -15,7 +15,7 @@
   <View id="71d38" viewKey="View 1">
     <Text
       id="text51"
-      value="### {{ timeOfDay.value}}, {{ current_user.firstName || 'colleague' }}!"
+      value="### {{ timeOfDay.value}}, {{ current_user.firstName || 'colleague or friend' }}!"
       verticalAlign="center"
     />
     <Alert2 id="alert1" value="info">
