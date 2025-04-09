@@ -3,38 +3,28 @@ name: Sync to Production
 on:
   push:
     branches:
-      - main  # Adjust if your primary branch has a different name
+      - main  # Adjust this to your main branch name if different
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Development Repo
+      - name: Checkout Development Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch the entire history
+          fetch-depth: 0
 
-      - name: Set up SSH
-        env:
-          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          printf '%b' "$DEPLOY_SSH_KEY" > ~/.ssh/sync_deploy_rsa
-          chmod 600 ~/.ssh/sync_deploy_rsa
-          # Start the SSH agent and capture its environment variables in the same shell session
-          eval "$(ssh-agent -s)"
-          ssh-add ~/.ssh/sync_deploy_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          ssh-add -L  # Debug: list loaded keys
-          
-      - name: List loaded SSH keys
-        run: |
-          ssh-add -L || echo "No keys loaded"
+      - name: Start SSH Agent and Add Key
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
 
-      - name: Add Production Remote via SSH
+      - name: Verify SSH Key Loaded
+        run: ssh-add -L
+
+      - name: Add Production Remote and Push Changes
         run: |
           git remote add production git@github.com:hasun-retool/nbcGithubProduction.git
-
-      - name: Push to Production
-        run: |
+          # Optional: show current remotes for debugging
+          git remote -v
           git push production main --force
