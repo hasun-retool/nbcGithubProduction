@@ -20,10 +20,10 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           # Use printf '%b' to interpret escaped newline characters
-          printf '%b' "$DEPLOY_SSH_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
+          printf '%b' "$DEPLOY_SSH_KEY" > ~/.ssh/sync_deploy_rsa
+          chmod 600 ~/.ssh/sync_deploy_rsa
           eval "$(ssh-agent -s)"
-          ssh-add ~/.ssh/id_ed25519
+          ssh-add ~/.ssh/sync_deploy_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - name: Add Production Remote via SSH
