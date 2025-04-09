@@ -2,9 +2,8 @@
   "addGlobalParamButton": {
     "container": "container1",
     "subcontainer": "c8c87",
-    "col": 10,
+    "col": 9,
     "height": 1,
-    "width": 2,
     "stackPosition": {
       "object": {
         "ordinal": 3,
