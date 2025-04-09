@@ -16,7 +16,7 @@
   <View id="c8c87" viewKey="View 1">
     <Text
       id="text1"
-      value="##### Search Global Parameter"
+      value="##### Search Global Parameter Below"
       verticalAlign="center"
     />
     <Button

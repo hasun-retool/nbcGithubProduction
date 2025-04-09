@@ -37,6 +37,12 @@
     />
   </Header>
   <Body>
+    <Text
+      id="text2"
+      style={{ ordered: [{ color: "highlight" }] }}
+      value="##### General"
+      verticalAlign="center"
+    />
     <Select
       id="select6"
       data="{{ getDistinctAppName.data }}"
@@ -48,17 +54,6 @@
       showSelectionIndicator={true}
       values="{{ item.app_name }}"
     />
-    <Text
-      id="text2"
-      style={{ ordered: [{ color: "highlight" }] }}
-      value="##### General"
-      verticalAlign="center"
-    />
-    <Icon
-      id="icon12"
-      icon="bold/interface-add-circle"
-      style={{ map: { color: "danger" } }}
-    />
     <Select
       id="select7"
       data="{{ getDistinctPlatform.data }}"
@@ -69,6 +64,11 @@
       placeholder="Select an option"
       showSelectionIndicator={true}
       values="{{ item.platform }}"
+    />
+    <Icon
+      id="icon12"
+      icon="bold/interface-add-circle"
+      style={{ map: { color: "danger" } }}
     />
     <Select
       id="select4"

@@ -14,6 +14,7 @@
   </Header>
   <View id="a8803" viewKey="View 1">
     <Text id="text18" value="#### Roku Header Bidding" verticalAlign="center" />
+    <Button id="button10" text="View History" />
     <Button
       id="button12"
       style={{
@@ -24,7 +25,6 @@
       }}
       text="Save"
     />
-    <Button id="button10" text="View History" />
     <Divider id="divider4" />
   </View>
 </Container>
