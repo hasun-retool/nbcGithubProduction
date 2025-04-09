@@ -19,12 +19,13 @@ jobs:
           DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
-          # Use printf '%b' to interpret escaped newline characters
           printf '%b' "$DEPLOY_SSH_KEY" > ~/.ssh/sync_deploy_rsa
           chmod 600 ~/.ssh/sync_deploy_rsa
+          # Start the SSH agent and capture its environment variables in the same shell session
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/sync_deploy_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+          ssh-add -L  # Debug: list loaded keys
           
       - name: List loaded SSH keys
         run: |
