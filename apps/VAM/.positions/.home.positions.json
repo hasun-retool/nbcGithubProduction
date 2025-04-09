@@ -1,20 +1,4 @@
 {
-  "alert1": {
-    "container": "container7",
-    "subcontainer": "71d38",
-    "row": 1.8,
-    "col": 1,
-    "height": 2.4,
-    "width": 10,
-    "stackPosition": {
-      "object": {
-        "ordinal": 1,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
   "button30": {
     "container": "container8",
     "subcontainer": "5d87c",
@@ -70,13 +54,13 @@
   "gridView1": {
     "container": "container7",
     "subcontainer": "71d38",
-    "row": 5,
+    "row": 2.4,
     "col": 1,
     "height": 10.2,
     "width": 10,
     "stackPosition": {
       "object": {
-        "ordinal": 3,
+        "ordinal": 2,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -92,7 +76,7 @@
     "width": 5,
     "stackPosition": {
       "object": {
-        "ordinal": 2,
+        "ordinal": 1,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -131,7 +115,7 @@
   "text54": {
     "container": "container7",
     "subcontainer": "71d38",
-    "row": 4.4,
+    "row": 1.8,
     "col": 1,
     "height": 0.6,
     "stackPosition": {
