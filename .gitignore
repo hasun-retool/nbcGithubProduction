@@ -1,0 +1,2 @@
+# Ignore GitHub Actions workflows (to prevent pushing them)
+.github/workflows/
