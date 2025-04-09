@@ -1,0 +1,1 @@
+SELECT DISTINCT platform FROM global_params;

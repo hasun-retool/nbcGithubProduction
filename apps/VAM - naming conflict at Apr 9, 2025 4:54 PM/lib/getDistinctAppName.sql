@@ -1,0 +1,1 @@
+SELECT DISTINCT app_name FROM global_params

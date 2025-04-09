@@ -1,0 +1,13 @@
+{
+  "avatar2": {
+    "rowGroup": "footer",
+    "subcontainer": "sidebarFrame2",
+    "height": 0.2,
+    "width": 1
+  },
+  "navigation3": {
+    "subcontainer": "sidebarFrame2",
+    "height": 0.8,
+    "width": 1
+  }
+}

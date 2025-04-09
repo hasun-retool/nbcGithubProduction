@@ -1,0 +1,1 @@
+SELECT DISTINCT stream_type FROM global_params;
