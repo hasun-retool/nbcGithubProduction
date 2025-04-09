@@ -2,9 +2,8 @@
   "addGlobalParamButton": {
     "container": "container1",
     "subcontainer": "c8c87",
-    "col": 10,
+    "col": 9,
     "height": 1,
-    "width": 2,
     "stackPosition": {
       "object": {
         "ordinal": 3,
@@ -142,7 +141,6 @@
   "button9": {
     "container": "group1",
     "subcontainer": "fb848",
-    "row": 0,
     "col": 11,
     "height": 0.8,
     "width": 1,
@@ -554,7 +552,6 @@
     "type": "stack",
     "container": "group2",
     "subcontainer": "a8803",
-    "row": 0,
     "col": 10,
     "height": 0.6,
     "width": 2,
@@ -1336,7 +1333,6 @@
   "text16": {
     "container": "group2",
     "subcontainer": "a8803",
-    "row": 0,
     "height": 0.6,
     "width": 5,
     "stackPosition": {
@@ -1351,7 +1347,6 @@
   "text17": {
     "container": "group2",
     "subcontainer": "a8803",
-    "row": 0,
     "col": 5,
     "height": 0.6,
     "width": 5,
